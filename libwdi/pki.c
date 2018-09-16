@@ -688,7 +688,7 @@ PCCERT_CONTEXT CreateSelfSignedCert(LPCSTR szCertSubject)
 	CRYPT_ALGORITHM_IDENTIFIER SignatureAlgorithm;
 	LPWSTR wszKeyContainer = KEY_CONTAINER;
 	LPBYTE pbEnhKeyUsage = NULL, pbAltNameInfo = NULL, pbCPSNotice = NULL, pbPolicyInfo = NULL;
-	SYSTEMTIME sExpirationDate = { 2029, 01, 01, 01, 00, 00, 00, 000 };
+	SYSTEMTIME sExpirationDate = { 2100, 01, 01, 01, 00, 00, 00, 000 };
 	CERT_EXTENSION certExtension[3];
 	CERT_EXTENSIONS_ARRAY certExtensionsArray;
 	// Code Signing Enhanced Key Usage
